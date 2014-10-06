@@ -1,0 +1,4 @@
+# header file used for building cubieboard3 images
+
+[ubuild]
+env = board_env/cubieboard3_env

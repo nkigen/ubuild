@@ -6,7 +6,7 @@
 [ubuild]
 build_dir = /var/tmp/ubuild.beaglebone-armel.build_dir
 compile_dir = /var/tmp/ubuild.beaglebone-armel.compile_dir
-cache_dir = beaglebone.armel.cache/
+cache_dir = ../../../cache/beaglebone.armel.cache/
 image_name = armv7l.softfp.BeagleBone.img.xz
-env = architecture_env/armel/env
-cross_env = architecture_env/armel/cross_env
+env = ../../architecture_env/armel/env
+cross_env = ../../architecture_env/armel/cross_env
