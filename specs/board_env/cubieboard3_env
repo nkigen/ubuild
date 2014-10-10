@@ -3,8 +3,8 @@
 _SPEC_DIR=$(dirname "${UBUILD_SPEC_PATH}")
 
 # Linux kernel configuration, either set KERNEL_DEFCONFIG or KERNEL_CONFIG
-KERNEL_DEFCONFIG="omap2plus_defconfig"
-KERNEL_CONFIG=""
+KERNEL_DEFCONFIG=""
+KERNEL_CONFIG="${_SPEC_DIR}/kernel/cubieboard3_config"
 KERNEL_MD5="-" # $(md5sum "${KERNEL_CONFIG}")
 if [ -z "${KERNEL_MD5}" ]; then
     exit 1
@@ -12,7 +12,7 @@ fi
 
 export KERNEL_DEFCONFIG KERNEL_CONFIG KERNEL_MD5
 
-UBOOT_DEFCONFIG="omap3_beagle_config"
+UBOOT_DEFCONFIG="config-cubian-base-sun4i"
 UBOOT_RAMDISK_ADDRESS="0x48000000"
 UBOOT_RAMDISK_ENTRYPOINT="0x43000000"
 UBOOT_KERNEL_ADDRESS="0x47000000"

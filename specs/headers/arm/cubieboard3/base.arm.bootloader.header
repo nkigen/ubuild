@@ -1,0 +1,8 @@
+# Header file used to build the bootloader used by ARM images
+
+[pkg=u-boot]
+build = ../../../scripts/build_pkg_u-boot.sh
+cache_vars = UBOOT_DEFCONFIG UBOOT_UENV UBOOT_IMAGE_NAME
+post = ../../../scripts/post_build_uEnv.sh
+sources = v2013.10-sunxi
+url = https://github.com/linux-sunxi/u-boot-sunxi/archive/v2013.10-sunxi.tar.gz
