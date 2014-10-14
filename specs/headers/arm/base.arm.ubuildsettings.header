@@ -18,4 +18,4 @@ pre = ../../scripts/pre_build.sh
 post = ../../scripts/post_build.sh
 rootfs_dir = ../../rootfs/
 initramfs_rootfs_dir = ../../rootfs/
-sources_dir = ../../sources/
+sources_dir = ../../../sources/

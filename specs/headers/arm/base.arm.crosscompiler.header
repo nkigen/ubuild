@@ -23,13 +23,15 @@ url = http://ftp.gnu.org/gnu/binutils/binutils-2.23.1.tar.gz
 
 [cross=gcc-stage1]
 build = ../../scripts/cross_gcc-stage1.sh
-sources = gcc-4.7.2
-url = http://ftp.gnu.org/gnu/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2
+sources = gcc-4.7.3
+url = https://ftp.gnu.org/gnu/gcc/gcc-4.7.3/gcc-4.7.3.tar.bz2
 
 [cross=linux-headers]
 build = ../../scripts/cross_linux-headers.sh
-sources = linux-3.7.10
-url = http://www.kernel.org/pub/linux/kernel/v3.x/linux-3.7.10.tar.xz
+# sources = linux-3.7.10
+# url = http://www.kernel.org/pub/linux/kernel/v3.x/linux-3.7.10.tar.xz
+sources = linux-3.4.61
+url = www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.61.tar.xz
 
 [cross=glibc-ports]
 build = ../../scripts/cross_glibc-ports.sh
@@ -52,8 +54,8 @@ url = http://ftp.gnu.org/gnu/glibc/glibc-2.16.0.tar.xz
 
 [cross=gcc]
 build = ../../scripts/cross_gcc-stage2.sh
-sources = gcc-4.7.2
-url = http://ftp.gnu.org/gnu/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2
+sources = gcc-4.7.3
+url = https://ftp.gnu.org/gnu/gcc/gcc-4.7.3/gcc-4.7.3.tar.bz2
 
 [cross=u-boot-tools]
 build = ../../scripts/cross_u-boot-tools.sh

@@ -1,4 +1,15 @@
-# header file used for building cubieboard3 images
+# Header file used for building base BeagleBoard images
 
+#include ../arm/base.arm.ubuildsettings.header
 [ubuild]
 env = ../../board_env/cubieboard3_env
+
+#include ../arm/base.arm.crosscompiler.header
+
+#include ../arm/base.arm.kernel.header
+[pkg=kernel]
+sources = linux-sunxi-sunxi-v3.4.61-r1
+url = https://github.com/linux-sunxi/linux-sunxi/archive/sunxi-v3.4.61-r1.tar.gz
+
+#include ../arm/base.arm.bootloader.header
+#include ../arm/base.arm.userspace.header

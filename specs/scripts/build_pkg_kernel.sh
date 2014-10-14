@@ -18,6 +18,7 @@ src_prepare() {
 }
 
 src_configure() {
+	echo "Nelson ${BUILD_DIR}"
     cd "${BUILD_DIR}" || return 1
 
     if [ -n "${KERNEL_CONFIG}" ]; then

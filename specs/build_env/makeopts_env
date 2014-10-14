@@ -2,7 +2,7 @@
 
 _NUM_CPUS="$(($(grep ^processor /proc/cpuinfo 2> /dev/null | wc -l) - 1))"
 if [ "${_NUM_CPUS}" = "" ] || [ "${_NUM_CPUS}" = "0" ]; then
-    _NUM_CPUS="1"
+    _NUM_CPUS="3"
 fi
 MAKEOPTS="-j${_NUM_CPUS}"
 

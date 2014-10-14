@@ -1,4 +1,4 @@
-#include base.beagleboard.header
+#include base.cubieboard3.header
 
 [ubuild]
 cache_dir = ../../../cache/benchmark-base.armhf.cubieboard3.cache/

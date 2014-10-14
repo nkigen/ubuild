@@ -4,7 +4,7 @@ _SPEC_DIR=$(dirname "${UBUILD_SPEC_PATH}")
 
 # Linux kernel configuration, either set KERNEL_DEFCONFIG or KERNEL_CONFIG
 KERNEL_DEFCONFIG=""
-KERNEL_CONFIG="${_SPEC_DIR}/kernel/cubieboard3_config"
+KERNEL_CONFIG="${_SPEC_DIR}/../../kernel/cubieboard3_config"
 KERNEL_MD5="-" # $(md5sum "${KERNEL_CONFIG}")
 if [ -z "${KERNEL_MD5}" ]; then
     exit 1
@@ -20,7 +20,7 @@ UBOOT_KERNEL_ENTRYPOINT="${UBOOT_KERNEL_ADDRESS}"
 UBOOT_IMAGE_NAME="u-boot.img"
 IMAGE_TTY_DEV="/dev/ttyS0"
 IMAGE_SIZE_MB="512"
-UBOOT_UENV="${_SPEC_DIR}/boot/cubieboard3.uEnv.txt"
+UBOOT_UENV="${_SPEC_DIR}/../../boot/cubieboard3.uEnv.txt"
 if [ ! -e "${UBOOT_UENV}" ]; then
     echo "${UBOOT_UENV} not found" >&2
     exit 1
