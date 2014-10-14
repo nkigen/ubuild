@@ -1,7 +1,7 @@
 # ubuild .spec file that creates an armel (armv7,
 # hardfp) image for the CubieBoard3.
 
-#include base.cubieboard3.header
+#include ../../headers/cubieboard/base.cubieboard3.header
 
 [ubuild]
 build_dir = /var/tmp/ubuild.cubieboard3-armhf.build_dir
