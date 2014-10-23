@@ -10,6 +10,6 @@ export ARCH ABI CTARGET
 
 CFLAGS="-O2 -pipe -march=armv7-a -mfpu=neon -mfloat-abi=softfp"
 CXXFLAGS="${CXXFLAGS}"
-LDFLAGS="--as-needed"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
 
 export CFLAGS CXXFLAGS LDFLAGS MAKEOPTS

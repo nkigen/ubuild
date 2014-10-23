@@ -2,7 +2,7 @@
 
 #include base.arm.ubuildsettings.header
 [ubuild]
-env = board_env/beagleboard_env
+env = ../../board_env/beagleboard_env
 
 #include base.arm.crosscompiler.header
 

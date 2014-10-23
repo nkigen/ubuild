@@ -7,4 +7,4 @@ all:
 	echo
 
 benchmark:
-	$(UBUILD) $(wildcard benchmark.*.spec)
+	$(UBUILD) $(wildcard specs/benchmark.*.spec)

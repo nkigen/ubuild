@@ -1,7 +1,7 @@
 # ubuild .spec file that creates an armel (armv7,
 # softfp) image for the BeagleBoard.
 
-#include base.beagleboard.header
+#include ../../headers/beagleboard/base.beagleboard.header
 
 [ubuild]
 build_dir = /var/tmp/ubuild.beagleboard-armel.build_dir
