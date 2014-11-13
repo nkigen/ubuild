@@ -1,7 +1,7 @@
 # ubuild .spec file that creates an armel (armv7,
 # hardfp) image for the BeagleBone.
 
-#include base.beaglebone.header
+#include ../../headers/beaglebone/base.beaglebone.header
 
 [ubuild]
 build_dir = /var/tmp/ubuild.beaglebone-armhf.build_dir

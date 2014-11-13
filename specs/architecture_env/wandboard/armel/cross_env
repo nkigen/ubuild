@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# These are needed by GCC
+ARCH="arm"
+ABI="gnueabi"
+CTARGET="${ARCH}-unknown-linux-${ABI}"
+export ARCH ABI CTARGET
+
+CFLAGS="-O2 -pipe"
+CXXFLAGS="${CXXFLAGS}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+
+# ARM specific flags
+GCC_CONFIGURE_ARGS="--with-arch=armv7-a --with-float=soft"
+
+export CFLAGS CXXFLAGS LDFLAGS GCC_CONFIGURE_ARGS

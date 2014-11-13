@@ -1,0 +1,14 @@
+# Header file used for building base BeagleBoard images
+
+#include base.arm.ubuildsettings.header
+[ubuild]
+env = ../../board_env/wandboard_env
+
+#include base.arm.crosscompiler.header
+
+#include base.arm.kernel.header
+[pkg=kernel]
+sources = wandboard_imx_3.10.17_1.0.1_ga
+url = https://github.com/wandboard-org/linux/archive/wandboard_imx_3.10.17_1.0.1_ga.zip 
+#include base.arm.bootloader.header
+#include base.arm.userspace.header

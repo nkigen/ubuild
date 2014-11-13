@@ -1,0 +1,15 @@
+#!/bin/bash
+
+_SPEC_DIR=$(dirname "${UBUILD_SPEC_PATH}")
+
+# These are needed by GCC
+ARCH="arm"
+ABI="gnueabi"
+CTARGET="${ARCH}-unknown-linux-${ABI}"
+export ARCH ABI CTARGET
+
+CFLAGS="-O2 -pipe -march=armv7-a -mfpu=neon -mfloat-abi=softfp"
+CXXFLAGS="${CXXFLAGS}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+
+export CFLAGS CXXFLAGS LDFLAGS MAKEOPTS
