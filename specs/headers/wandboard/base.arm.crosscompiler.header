@@ -28,10 +28,12 @@ url = https://ftp.gnu.org/gnu/gcc/gcc-4.7.3/gcc-4.7.3.tar.bz2
 
 [cross=linux-headers]
 build = ../../scripts/cross_linux-headers.sh
+sources = linux-headers-3.10.17.1-wand-armhf.com
+url = http://s3.armhf.com/dist/wand/linux-headers-3.10.17.1-wand-armhf.com.tar.xz
 # sources = linux-3.7.10
 # url = http://www.kernel.org/pub/linux/kernel/v3.x/linux-3.7.10.tar.xz
-sources = linux-3.4.61
-url = www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.61.tar.xz
+# sources = linux-3.4.61
+# url = www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.61.tar.xz
 
 [cross=glibc-ports]
 build = ../../scripts/cross_glibc-ports.sh
