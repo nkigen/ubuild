@@ -4,6 +4,8 @@
 build = ../../scripts/build_pkg_u-boot.sh
 cache_vars = UBOOT_DEFCONFIG UBOOT_UENV UBOOT_IMAGE_NAME
 post = ../../scripts/post_build_uEnv.sh
-sources = wand-uboot
-url = http://s3.armhf.com/dist/wand/wand-uboot.tar.xz
+patch = ../../patches/wandbboard/u-boot/0001-wandboard-uEnv.txt-bootz-n-fixes.patch
+sources = u-boot-2014.10
+url = git://git.denx.de/u-boot.git@v2014.10 u-boot-2014.10.tar.gz
+#url = http://s3.armhf.com/dist/wand/wand-uboot.tar.xz
 #url = https://github.com/linux-sunxi/u-boot-sunxi/archive/v2013.10-sunxi.tar.gz
