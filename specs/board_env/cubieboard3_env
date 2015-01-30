@@ -5,10 +5,10 @@ _SPEC_DIR=$(dirname "${UBUILD_SPEC_PATH}")
 # Linux kernel configuration, either set KERNEL_DEFCONFIG or KERNEL_CONFIG
 KERNEL_DEFCONFIG="sun7i_defconfig" #Sun7i Defconfig
 KERNEL_CONFIG= "" #"${_SPEC_DIR}/../../kernel/cubieboard3_config"
-KERNEL_MD5="-" # $(md5sum "${KERNEL_CONFIG}")
-if [ -z "${KERNEL_MD5}" ]; then
-    exit 1
-fi
+KERNEL_MD5= $(md5sum "${KERNEL_DEFCONFIG}")
+#if [ -z "${KERNEL_MD5}" ]; then
+#    exit 1
+#fi
 
 export KERNEL_DEFCONFIG KERNEL_CONFIG KERNEL_MD5
 

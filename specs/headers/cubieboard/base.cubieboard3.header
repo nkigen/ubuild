@@ -8,8 +8,10 @@ env = ../../board_env/cubieboard3_env
 
 #include base.arm.kernel.header
 [pkg=kernel]
-sources = linux-sunxi-sunxi-v3.4.61-r1
-url = https://github.com/linux-sunxi/linux-sunxi/archive/sunxi-v3.4.61-r1.tar.gz
+sources = linux-sunxi
+url = git://github.com/linux-sunxi/linux-sunxi/@sunxi-3.4 linux-sunxi-3.4.tar.gz
+#sources = linux-sunxi
+#url = git://github.com/dan-and/linux-sunxi@dan-3.4.105 linux-sunxi-dan-and.tar.gz
 
 #include base.arm.bootloader.header
 #include base.arm.userspace.header
