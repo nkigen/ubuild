@@ -31,7 +31,11 @@ src_compile() {
 src_install() {
     mkdir "${TARGET_DIR}" || return 1
     mkdir "${TARGET_DIR}/boot" || return 1
-    cp MLO "${TARGET_DIR}/boot/" || return 1
+    if [ -f MLO ]; then
+	    cp MLO "${TARGET_DIR}/boot/" || return 1
+    elif [ -f u-boot.imx ]; then
+	    cp u-boot.imx "${TARGET_DIR}/boot/" || return 1
+    fi
     cp "${UBOOT_IMAGE_NAME}" "${TARGET_DIR}/boot/" || return 1
 }
 
